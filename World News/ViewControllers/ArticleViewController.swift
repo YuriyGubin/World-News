@@ -12,9 +12,8 @@ class ArticleViewController: UIViewController {
     
     @IBOutlet var articleImageView: UIImageView!
     
-    @IBOutlet var titleTF: UITextField!
-    @IBOutlet var contentTF: UITextField!
-    
+    @IBOutlet var titleTextView: UITextView!
+    @IBOutlet var contentTextView: UITextView!
     var article: Article!
     
     override func viewDidLoad() {
@@ -24,8 +23,8 @@ class ArticleViewController: UIViewController {
     }
     
     private func setupViews() {
-        titleTF.text = article?.title ?? ""
-        contentTF.text = article?.description ?? ""
+        titleTextView.text = article?.title ?? ""
+        contentTextView.text = String(repeating: article?.description ?? "", count: 10)
         title = article?.source.name ?? ""
         
         NetworkManager.shared.fetchImage(from: article?.urlToImage ?? "") { [weak self] result in

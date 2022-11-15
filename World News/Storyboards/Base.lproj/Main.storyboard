@@ -91,71 +91,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="048-ZH-E9H">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-Jt-dgt">
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mwh-lK-ckH">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="342.66666666666669"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-cm-Jhk">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="538.33333333333337"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hd2-Os-xNc">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="215.66666666666666"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqM-Sl-P6I">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="208"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="208" id="w29-be-LpY"/>
+                                                </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-iC-os0">
-                                                <rect key="frame" x="8" y="223" width="374" height="32"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zkN-Mt-C7v">
+                                                <rect key="frame" x="20" y="216" width="350" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="afK-tG-xFf">
-                                                <rect key="frame" x="8" y="263" width="374" height="60"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BGJ-F4-ULF">
+                                                <rect key="frame" x="20" y="261" width="350" height="227.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="afK-tG-xFf" firstAttribute="leading" secondItem="mwh-lK-ckH" secondAttribute="leading" constant="8" id="5Nj-mY-8PZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="afK-tG-xFf" secondAttribute="trailing" constant="8" id="AOF-0Z-fOM"/>
-                                            <constraint firstItem="rKb-iC-os0" firstAttribute="leading" secondItem="mwh-lK-ckH" secondAttribute="leading" constant="8" id="BXg-bg-dOT"/>
-                                            <constraint firstItem="Hd2-Os-xNc" firstAttribute="leading" secondItem="mwh-lK-ckH" secondAttribute="leading" id="HWu-Q3-kCl"/>
-                                            <constraint firstItem="afK-tG-xFf" firstAttribute="top" secondItem="rKb-iC-os0" secondAttribute="bottom" constant="8" symbolic="YES" id="TEl-Ew-RQY"/>
-                                            <constraint firstItem="rKb-iC-os0" firstAttribute="top" secondItem="Hd2-Os-xNc" secondAttribute="bottom" constant="8" id="UmX-yj-dGo"/>
-                                            <constraint firstItem="Hd2-Os-xNc" firstAttribute="height" secondItem="mwh-lK-ckH" secondAttribute="width" multiplier="26:47" id="bn9-fG-skG"/>
-                                            <constraint firstAttribute="trailing" secondItem="rKb-iC-os0" secondAttribute="trailing" constant="8" id="fDc-MX-XPp"/>
-                                            <constraint firstAttribute="bottom" secondItem="afK-tG-xFf" secondAttribute="bottom" constant="50" id="iKP-o4-YBF"/>
-                                            <constraint firstAttribute="trailing" secondItem="Hd2-Os-xNc" secondAttribute="trailing" id="kew-XT-hyY"/>
-                                            <constraint firstItem="Hd2-Os-xNc" firstAttribute="top" secondItem="mwh-lK-ckH" secondAttribute="top" id="zGi-kz-VRi"/>
+                                            <constraint firstItem="BGJ-F4-ULF" firstAttribute="top" secondItem="zkN-Mt-C7v" secondAttribute="bottom" constant="5" id="30n-ah-HUE"/>
+                                            <constraint firstAttribute="trailing" secondItem="BGJ-F4-ULF" secondAttribute="trailing" constant="20" symbolic="YES" id="5Cu-yN-cfX"/>
+                                            <constraint firstItem="zkN-Mt-C7v" firstAttribute="leading" secondItem="HT1-cm-Jhk" secondAttribute="leading" constant="20" symbolic="YES" id="DmE-vP-tZQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="zkN-Mt-C7v" secondAttribute="trailing" constant="20" symbolic="YES" id="HNy-On-coE"/>
+                                            <constraint firstAttribute="trailing" secondItem="pqM-Sl-P6I" secondAttribute="trailing" id="Nze-CA-S1x"/>
+                                            <constraint firstItem="zkN-Mt-C7v" firstAttribute="top" secondItem="pqM-Sl-P6I" secondAttribute="bottom" constant="8" symbolic="YES" id="TYq-Yg-TQm"/>
+                                            <constraint firstItem="pqM-Sl-P6I" firstAttribute="top" secondItem="HT1-cm-Jhk" secondAttribute="top" id="Yav-94-UdP"/>
+                                            <constraint firstItem="pqM-Sl-P6I" firstAttribute="leading" secondItem="HT1-cm-Jhk" secondAttribute="leading" id="nVP-6H-0jQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="BGJ-F4-ULF" secondAttribute="bottom" constant="50" id="tUF-Vr-4K8"/>
+                                            <constraint firstItem="BGJ-F4-ULF" firstAttribute="leading" secondItem="HT1-cm-Jhk" secondAttribute="leading" constant="20" symbolic="YES" id="vnu-Bv-5de"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mwh-lK-ckH" firstAttribute="top" secondItem="048-ZH-E9H" secondAttribute="top" id="4g7-vd-WJ0"/>
-                                    <constraint firstAttribute="trailing" secondItem="mwh-lK-ckH" secondAttribute="trailing" id="Mll-jG-EDj"/>
-                                    <constraint firstItem="mwh-lK-ckH" firstAttribute="width" secondItem="048-ZH-E9H" secondAttribute="width" id="f0q-vo-YbM"/>
-                                    <constraint firstItem="mwh-lK-ckH" firstAttribute="leading" secondItem="048-ZH-E9H" secondAttribute="leading" id="kbK-Vp-MPW"/>
-                                    <constraint firstAttribute="bottom" secondItem="mwh-lK-ckH" secondAttribute="bottom" id="y9n-ea-kS7"/>
+                                    <constraint firstItem="HT1-cm-Jhk" firstAttribute="leading" secondItem="RVl-Jt-dgt" secondAttribute="leading" id="Ja1-Md-bA3"/>
+                                    <constraint firstAttribute="trailing" secondItem="HT1-cm-Jhk" secondAttribute="trailing" id="NPZ-IX-cJJ"/>
+                                    <constraint firstItem="HT1-cm-Jhk" firstAttribute="width" secondItem="RVl-Jt-dgt" secondAttribute="width" id="QRn-Sb-gHV"/>
+                                    <constraint firstItem="HT1-cm-Jhk" firstAttribute="top" secondItem="RVl-Jt-dgt" secondAttribute="top" id="RaJ-IT-BkM"/>
+                                    <constraint firstAttribute="trailing" secondItem="HT1-cm-Jhk" secondAttribute="trailing" id="Xew-x2-U5K"/>
+                                    <constraint firstAttribute="bottom" secondItem="HT1-cm-Jhk" secondAttribute="bottom" id="fXs-0H-gvK"/>
+                                    <constraint firstItem="HT1-cm-Jhk" firstAttribute="top" secondItem="RVl-Jt-dgt" secondAttribute="top" id="klV-xI-aOa"/>
+                                    <constraint firstItem="HT1-cm-Jhk" firstAttribute="leading" secondItem="RVl-Jt-dgt" secondAttribute="leading" id="zUX-HN-t8R"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="6Mu-Rj-TBH"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="mj5-p9-5Si"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CgW-bK-9K7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Evn-4p-sCu"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZZ5-Pi-KnU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZZ5-Pi-KnU" firstAttribute="bottom" secondItem="048-ZH-E9H" secondAttribute="bottom" id="JEi-r5-DBS"/>
-                            <constraint firstItem="048-ZH-E9H" firstAttribute="top" secondItem="ZZ5-Pi-KnU" secondAttribute="top" id="NSc-mF-Aig"/>
-                            <constraint firstItem="048-ZH-E9H" firstAttribute="leading" secondItem="ZZ5-Pi-KnU" secondAttribute="leading" id="iJB-9b-P55"/>
-                            <constraint firstItem="048-ZH-E9H" firstAttribute="trailing" secondItem="ZZ5-Pi-KnU" secondAttribute="trailing" id="vAs-RW-J07"/>
+                            <constraint firstItem="RVl-Jt-dgt" firstAttribute="top" secondItem="ZZ5-Pi-KnU" secondAttribute="top" id="YfC-Wm-34l"/>
+                            <constraint firstItem="RVl-Jt-dgt" firstAttribute="leading" secondItem="ZZ5-Pi-KnU" secondAttribute="leading" id="kuZ-qi-rHt"/>
+                            <constraint firstItem="RVl-Jt-dgt" firstAttribute="bottom" secondItem="ZZ5-Pi-KnU" secondAttribute="bottom" id="o9Y-1u-tWr"/>
+                            <constraint firstItem="RVl-Jt-dgt" firstAttribute="trailing" secondItem="ZZ5-Pi-KnU" secondAttribute="trailing" id="thg-Wo-93n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8d2-FM-ECM"/>
                     <connections>
-                        <outlet property="articleImageView" destination="Hd2-Os-xNc" id="zwR-3Y-BDV"/>
+                        <outlet property="articleImageView" destination="pqM-Sl-P6I" id="hOb-VZ-nxt"/>
+                        <outlet property="contentTextView" destination="BGJ-F4-ULF" id="WRS-eM-eNm"/>
+                        <outlet property="titleTextView" destination="zkN-Mt-C7v" id="TwY-0O-wpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBj-OO-dlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
